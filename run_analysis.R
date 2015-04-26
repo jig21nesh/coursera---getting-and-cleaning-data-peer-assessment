@@ -50,13 +50,10 @@ r_Data <- function () {
   write.table(Data2, file = "tidydata.txt",row.name=FALSE)
   
   
-  #library(knitr)
-  #knit2html("codebook.Rmd")
+  library(knitr)
+  knit2html("codebook.Rmd")
   
-  require(knitr) # required for knitting from rmd to md
-  require(markdown) # required for md to html 
-  knit('codebook.Rmd', 'codebook.md') # creates md file
-  markdownToHTML('codebook.md', 'test.html') # creates html file
+  
   
   
 }
